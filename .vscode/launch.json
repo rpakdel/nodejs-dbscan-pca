@@ -7,7 +7,13 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "express",
+      "program": "${workspaceRoot}/bin/www"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "rundbscan",
       "program": "${workspaceRoot}\\rundbscan.js",
       "cwd": "${workspaceRoot}",
       "protocol": "inspector"

@@ -1,13 +1,13 @@
 "use strict"
 
 const { Matrix } = require('ml-matrix')
-const pca = require('ml-pca')
+const PCA = require('ml-pca')
 
-function makeMatrix(data) {
-  let m = new Matrix(data)
-  console.log(m)  
+function getOrientationMatrix(matrix) {
+  let pca = new PCA(matrix)
+  return pca.getEigenvectors()
 }
 
 module.exports = {
-  makeMatrix
+  getOrientationMatrix
 }
